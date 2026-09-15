@@ -382,7 +382,7 @@ pub fn atomic_write(path: &Path, data: &[u8]) -> Result<(), AppError> {
     Ok(())
 }
 
-#[cfg(test)]
+#[cfg(test)] // WORKSPACE-PATH:allow-fixture-block: this module is the file's #[cfg(test)] unit-test fixture data
 mod tests {
     use super::*;
     use std::path::Path;

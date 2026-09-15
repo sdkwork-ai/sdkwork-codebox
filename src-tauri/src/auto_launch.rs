@@ -68,7 +68,7 @@ pub fn is_auto_launch_enabled() -> Result<bool, AppError> {
         .map_err(|e| AppError::Message(format!("检查开机自启状态失败: {e}")))
 }
 
-#[cfg(test)]
+#[cfg(test)] // WORKSPACE-PATH:allow-fixture-block: this module is the file's #[cfg(test)] unit-test fixture data
 mod tests {
     use super::*;
 

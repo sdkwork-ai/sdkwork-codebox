@@ -445,7 +445,7 @@ pub fn set_mcp_servers_map(
     Ok(())
 }
 
-#[cfg(test)]
+#[cfg(test)] // WORKSPACE-PATH:allow-fixture-block: this module is the file's #[cfg(test)] unit-test fixture data
 mod tests {
     use super::*;
     use serde_json::json;
