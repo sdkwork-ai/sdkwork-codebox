@@ -13,7 +13,7 @@ const APP_CONFIG_PRODUCT_DIR: &str = "codebox";
 /// ## Windows 注意事项
 ///
 /// - `dirs::home_dir()` 在 Windows 上使用 `SHGetKnownFolderPath(FOLDERID_Profile)`，
-///   返回的是真实用户目录（类似 `C:\\Users\\Alice`），与 v3.10.2 行为一致。
+///   返回的是真实用户目录（类似 Windows 用户目录 `C:\\Users\\<user>`），与 v3.10.2 行为一致。
 /// - 不要直接使用 `HOME` 环境变量：它可能由 Git/Cygwin/MSYS 等第三方工具注入，
 ///   且不一定等于用户目录，历史版本曾因此落到错误的 `.codebox/codebox.db` 路径，
 ///   从而“看起来像数据丢失”。
