@@ -98,6 +98,7 @@
     "@radix-ui/react-tabs": "^1.1.13",
     "@radix-ui/react-tooltip": "^1.2.8",
     "@radix-ui/react-visually-hidden": "^1.2.4",
+    "@sdkwork/iam-credential-entry": "workspace:*",
     "@tanstack/react-query": "^5.90.3",
     "@tauri-apps/api": "^2.8.0",
     "@tauri-apps/plugin-dialog": "^2.4.0",
