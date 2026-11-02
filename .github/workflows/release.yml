@@ -72,7 +72,7 @@ jobs:
           echo "checkout_ref=$CHECKOUT_REF" >> "$GITHUB_OUTPUT"
 
   release:
-    name: Build and Upload Release Assets
+    name: Build and upload release assets (${{ matrix.os }})
     needs: metadata
     runs-on: ${{ matrix.os }}
     strategy:
